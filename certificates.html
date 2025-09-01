@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span>Portfolio.</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="certificates.html" class="nav-link active">Certificates</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.facebook.com/Thecode89"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/junior-maya-a56265251"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Jay89-tech?tab=repositories"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>My Certificates</h1>
+            <p>Professional certifications and achievements in technology</p>
+        </div>
+    </section>
+
+    <!-- Certificates Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Certificate Categories -->
+            <div class="certificate-filters">
+                <button class="filter-btn active" data-filter="all">All Certificates</button>
+                <button class="filter-btn" data-filter="programming">Programming</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="database">Database</button>
+                <button class="filter-btn" data-filter="cloud">Cloud Computing</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+
+            <!-- Certificates Grid -->
+            <div class="certificates-grid">
+                <!-- Sample certificates - replace with your actual certificates -->
+                <div class="certificate-item" data-category="programming">
+                    <img src="certificates/photo (1).png" alt="Huawei Networking Certificate">
+                    <div class="certificate-info">
+                        <h3>Huawei Networking</h3>
+                        <p>Huawei Talent</p>
+                        <p class="cert-date">Completed: August 2025</p>
+                        <button class="view-btn" onclick="openCertificateModal('certificates/photo (1).png', 'Huawei Networking', 'Comprehensive course covering Huawei networking technologies and solutions.')">View Certificate</button>
+                    </div>
+                </div>
+
+                <div class="certificate-item" data-category="web">
+                    <img src="certificates/photo (2).png" alt="Huawei Networking Certificate">
+                    <div class="certificate-info">
+                        <h3>Network Layers</h3>
+                        <p>Huawei Talent</p>
+                        <p class="cert-date">Completed: August 2025</p>
+                        <button class="view-btn" onclick="openCertificateModal('certificates/photo (2).png', 'Network Layers', 'In-depth course covering network layers and protocols.')">View Certificate</button>
+                    </div>
+                </div>
+
+                <div class="certificate-item" data-category="web">
+                    <img src="certificates/photo (3).png" alt="Huawei Networking Certificate">
+                    <div class="certificate-info">
+                        <h3>CRA Training</h3>
+                        <p>Huawei Talent</p>
+                        <p class="cert-date">Completed: August 2025</p>
+                        <button class="view-btn" onclick="openCertificateModal('certificates/photo (3).png', 'CRA Training', 'Comprehensive course on Huawei Cloud services and architecture.')">View Certificate</button>
+                    </div>
+                </div>
+
+                <div class="certificate-item" data-category="database">
+                    <img src="certificates/photo (4).png" alt="Huawei Networking Certificate">
+                    <div class="certificate-info">
+                        <h3>Cloud Development</h3>
+                        <p>Huawei Talent</p>
+                        <p class="cert-date">Completed: August 2025</p>
+                        <button class="view-btn" onclick="openCertificateModal('certificates/photo (4).png', 'Cloud Development', 'Advanced course on cloud development practices and tools.')">View Certificate</button>
+                    </div>
+                </div>
+
+                <div class="certificate-item" data-category="cloud">
+                    <img src="certificates/photo (5).png" alt="Huawei Networking Certificate">
+                    <div class="certificate-info">
+                        <h3>AI Basics</h3>
+                        <p>Huawei Talent</p>
+                        <p class="cert-date">Completed: August 2025</p>
+                        <button class="view-btn" onclick="openCertificateModal('certificates/photo (5).png', 'AI Basics', 'Foundational course on AI concepts, tools, and applications.')">View Certificate</button>
+                    </div>
+                </div>
+
+                <div class="certificate-item" data-category="programming">
+                    <img src="certificates/photo.png" alt="Huawei Networking Certificate">
+                    <div class="certificate-info">
+                        <h3>Cloud Services</h3>
+                        <p>Huawei Talent</p>
+                        <p class="cert-date">Completed: August 2025</p>
+                        <button class="view-btn" onclick="openCertificateModal('certificates/photo.png', 'Cloud Services', 'Comprehensive course on cloud service models, deployment, and management.')">View Certificate</button>
+                    </div>
+                </div>
+
+                <div class="certificate-item" data-category="other">
+                    <img src="certificates/OCI25AICFA.jpeg" alt="Oracle Certificate">
+                    <div class="certificate-info">
+                        <h3>Artificial Intelligence</h3>
+                        <p>Oracle</p>
+                        <p class="cert-date">Completed: August 2025</p>
+                        <button class="view-btn" onclick="openCertificateModal('certificates/OCI25AICFA.jpeg', 'Artificial Intelligence', 'Advanced course on AI concepts, machine learning, and neural networks.')">View Certificate</button>
+                    </div>
+                </div>
+
+                <div class="certificate-item" data-category="web">
+                    <img src="certificates/OCI25FNDCFA.jpeg" alt="Oracle Certificate">
+                    <div class="certificate-info">
+                        <h3>Cloud Computing</h3>
+                        <p>Oracle</p>
+                        <p class="cert-date">Completed: August 2025</p>
+                        <button class="view-btn" onclick="openCertificateModal('certificates/OCI25FNDCFA.jpeg', 'Cloud Computing', 'Comprehensive course on cloud infrastructure, services, and deployment models.')">View Certificate</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification Stats -->
+            <div class="cert-stats">
+                <h2>Certification Statistics</h2>
+                <div class="stats-overview">
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Total Certificates</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Platforms</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">120+</div>
+                        <div class="stat-label">Hours Studied</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2025</div>
+                        <div class="stat-label">Recent Year</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Verification Section -->
+            <div class="verification-section">
+                <h2>Certificate Verification</h2>
+                <p>All certificates can be verified through their respective issuing platforms. Click on any certificate to view the full details and verification information.</p>
+                <div class="verification-links">
+                    <a href="https://coursera.org" target="_blank" class="verification-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        Verify Coursera Certificates
+                    </a>
+                    <a href="https://freecodecamp.org" target="_blank" class="verification-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        Verify freeCodeCamp Certificates
+                    </a>
+                    <a href="https://udemy.com" target="_blank" class="verification-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        Verify Udemy Certificates
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Junior Maya. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Certificate filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.certificate-filters .filter-btn');
+            const certificateItems = document.querySelectorAll('.certificate-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    certificateItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 100);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+    <style>
+        /* Additional styles for certificates page */
+        .upload-instructions {
+            background: rgba(54, 162, 235, 0.1);
+            padding: 2rem 0;
+            border-top: 1px solid rgba(54, 162, 235, 0.2);
+            border-bottom: 1px solid rgba(54, 162, 235, 0.2);
+        }
+
+        .instruction-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .instruction-content i {
+            font-size: 2rem;
+            color: #36a2eb;
+        }
+
+        .instruction-content h3 {
+            color: #36a2eb;
+            margin-bottom: 0.5rem;
+        }
+
+        .instruction-content p {
+            color: #cccccc;
+        }
+
+        .certificate-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .certificate-filters .filter-btn {
+            background: rgba(255, 255, 255, 0.05);
+            color: #cccccc;
+            border: 1px solid rgba(255, 107, 53, 0.3);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .certificate-filters .filter-btn:hover,
+        .certificate-filters .filter-btn.active {
+            background: #ff6b35;
+            color: #ffffff;
+            border-color: #ff6b35;
+        }
+
+        .certificate-item {
+            transition: all 0.3s ease;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .certificate-item img {
+            border-radius: 10px 10px 0 0;
+        }
+
+        .cert-date {
+            color: #ff6b35 !important;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .cert-stats {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .cert-stats h2 {
+            color: #ff6b35;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .stats-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 107, 53, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff6b35;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff6b35;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #cccccc;
+            font-size: 1rem;
+        }
+
+        .verification-section {
+            margin-top: 4rem;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 107, 53, 0.1);
+        }
+
+        .verification-section h2 {
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+
+        .verification-section p {
+            color: #cccccc;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .verification-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .verification-link {
+            background: rgba(255, 107, 53, 0.1);
+            color: #ff6b35;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            border: 1px solid rgba(255, 107, 53, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .verification-link:hover {
+            background: #ff6b35;
+            color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            .certificate-filters {
+                justify-content: center;
+            }
+
+            .certificate-filters .filter-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.8rem;
+            }
+
+            .instruction-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .stats-overview {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .verification-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .verification-link {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span>Portfolio.</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.facebook.com/Thecode89"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/junior-maya-a56265251"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Jay89-tech?tab=repositories"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>A showcase of my development work and creative solutions</p>
+        </div>
+    </section>
+
+    <!-- GitHub Integration Notice -->
+    <section class="github-notice">
+        <div class="container">
+            <div class="notice-content">
+                <i class="fab fa-github"></i>
+                <div>
+                    <h3>GitHub Integration</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="desktop">Desktop Applications</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+
+            <!-- Loading State -->
+            <div class="loading-state">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading projects from GitHub...</p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Sample projects - these will be replaced by GitHub API -->
+                <div class="project-item" data-category="desktop">
+                    <div class="project-info">
+                        <h3>Student Management System</h3>
+                        <p>A comprehensive desktop application for managing student records, grades, and academic information with database integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="web">
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <p>A modern e-commerce platform with shopping cart functionality, payment integration, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">jQuery</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="other">
+                    <div class="project-info">
+                        <h3>Data Analysis Tool</h3>
+                        <p>A Python-based data analysis tool that processes CSV files and generates interactive visualizations and reports.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Seaborn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Stats -->
+            <div class="github-stats">
+                <h2>GitHub Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 id="total-repos">--</h3>
+                            <p>Public Repositories</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 id="total-stars">--</h3>
+                            <p>Total Stars</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 id="total-forks">--</h3>
+                            <p>Total Forks</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 id="followers">--</h3>
+                            <p>Followers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Junior Maya. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Project filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    projectItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 100);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Load GitHub stats
+            loadGitHubStats('Jay89-tech'); // Replace with your GitHub username
+        });
+
+        // Enhanced GitHub projects loader with stats
+        async function loadGitHubStats(username) {
+            try {
+                // Load user stats
+                const userResponse = await fetch(`https://api.github.com/users/Jay89-tech`);
+                const userData = await userResponse.json();
+
+                document.getElementById('total-repos').textContent = userData.public_repos || 0;
+                document.getElementById('followers').textContent = userData.followers || 0;
+
+                // Load repositories for stars and forks count
+                const reposResponse = await fetch(`https://api.github.com/users/Jay89-tech/repos?per_page=100`);
+                const repos = await reposResponse.json();
+
+                let totalStars = 0;
+                let totalForks = 0;
+
+                repos.forEach(repo => {
+                    totalStars += repo.stargazers_count || 0;
+                    totalForks += repo.forks_count || 0;
+                });
+
+                document.getElementById('total-stars').textContent = totalStars;
+                document.getElementById('total-forks').textContent = totalForks;
+
+                // Hide loading state
+                document.querySelector('.loading-state').style.display = 'none';
+
+            } catch (error) {
+                console.error('Error loading GitHub stats:', error);
+                document.querySelector('.loading-state').innerHTML = 
+                    '<i class="fas fa-exclamation-triangle"></i><p>Error loading GitHub data. Please check the username.</p>';
+            }
+        }
+    </script>
+
+    <style>
+        /* Additional styles for projects page */
+        .github-notice {
+            background: rgba(255, 107, 53, 0.1);
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255, 107, 53, 0.2);
+            border-bottom: 1px solid rgba(255, 107, 53, 0.2);
+        }
+
+        .notice-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .notice-content i {
+            font-size: 2rem;
+            color: #ff6b35;
+        }
+
+        .notice-content h3 {
+            color: #ff6b35;
+            margin-bottom: 0.5rem;
+        }
+
+        .notice-content p {
+            color: #cccccc;
+        }
+
+        .project-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.05);
+            color: #cccccc;
+            border: 1px solid rgba(255, 107, 53, 0.3);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #ff6b35;
+            color: #ffffff;
+            border-color: #ff6b35;
+        }
+
+        .loading-state {
+            text-align: center;
+            padding: 3rem 0;
+            color: #cccccc;
+        }
+
+        .loading-state i {
+            font-size: 2rem;
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+
+        .project-item {
+            transition: all 0.3s ease;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .github-stats {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .github-stats h2 {
+            color: #ff6b35;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 107, 53, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            border-color: #ff6b35;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+        }
+
+        .stat-icon {
+            width: 60px;
+            height: 60px;
+            background: #ff6b35;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            color: #ffffff;
+        }
+
+        .stat-content h3 {
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-content p {
+            color: #999999;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .project-filters {
+                justify-content: center;
+            }
+
+            .filter-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.8rem;
+            }
+
+            .notice-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+    </style>
