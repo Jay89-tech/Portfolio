@@ -47,18 +47,17 @@
         <div class="container">
             <!-- Certificate Categories -->
             <div class="certificate-filters">
-                <button class="filter-btn active" data-filter="all">All Certificates</button>
-                <button class="filter-btn" data-filter="programming">Programming</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="database">Database</button>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="network">Network</button>
+                <button class="filter-btn" data-filter="ai">Artificial Intelligence</button>
                 <button class="filter-btn" data-filter="cloud">Cloud Computing</button>
                 <button class="filter-btn" data-filter="other">Other</button>
             </div>
 
             <!-- Certificates Grid -->
             <div class="certificates-grid">
-                <!-- Sample certificates - replace with your actual certificates -->
-                <div class="certificate-item" data-category="programming">
+                <!-- Network Certificates -->
+                <div class="certificate-item" data-category="network">
                     <img src="certificates/photo (1).png" alt="Huawei Networking Certificate">
                     <div class="certificate-info">
                         <h3>Huawei Networking</h3>
@@ -68,8 +67,8 @@
                     </div>
                 </div>
 
-                <div class="certificate-item" data-category="web">
-                    <img src="certificates/photo (2).png" alt="Huawei Networking Certificate">
+                <div class="certificate-item" data-category="network">
+                    <img src="certificates/photo (2).png" alt="Network Layers Certificate">
                     <div class="certificate-info">
                         <h3>Network Layers</h3>
                         <p>Huawei Talent</p>
@@ -78,8 +77,8 @@
                     </div>
                 </div>
 
-                <div class="certificate-item" data-category="web">
-                    <img src="certificates/photo (3).png" alt="Huawei Networking Certificate">
+                <div class="certificate-item" data-category="network">
+                    <img src="certificates/photo (3).png" alt="CRA Training Certificate">
                     <div class="certificate-info">
                         <h3>CRA Training</h3>
                         <p>Huawei Talent</p>
@@ -88,8 +87,9 @@
                     </div>
                 </div>
 
-                <div class="certificate-item" data-category="database">
-                    <img src="certificates/photo (4).png" alt="Huawei Networking Certificate">
+                <!-- Cloud Computing Certificates -->
+                <div class="certificate-item" data-category="cloud">
+                    <img src="certificates/photo (4).png" alt="Cloud Development Certificate">
                     <div class="certificate-info">
                         <h3>Cloud Development</h3>
                         <p>Huawei Talent</p>
@@ -99,17 +99,7 @@
                 </div>
 
                 <div class="certificate-item" data-category="cloud">
-                    <img src="certificates/photo (5).png" alt="Huawei Networking Certificate">
-                    <div class="certificate-info">
-                        <h3>AI Basics</h3>
-                        <p>Huawei Talent</p>
-                        <p class="cert-date">Completed: August 2025</p>
-                        <button class="view-btn" onclick="openCertificateModal('certificates/photo (5).png', 'AI Basics', 'Foundational course on AI concepts, tools, and applications.')">View Certificate</button>
-                    </div>
-                </div>
-
-                <div class="certificate-item" data-category="programming">
-                    <img src="certificates/photo.png" alt="Huawei Networking Certificate">
+                    <img src="certificates/photo.png" alt="Cloud Services Certificate">
                     <div class="certificate-info">
                         <h3>Cloud Services</h3>
                         <p>Huawei Talent</p>
@@ -118,23 +108,34 @@
                     </div>
                 </div>
 
-                <div class="certificate-item" data-category="other">
-                    <img src="certificates/OCI25AICFA.jpeg" alt="Oracle Certificate">
-                    <div class="certificate-info">
-                        <h3>Artificial Intelligence</h3>
-                        <p>Oracle</p>
-                        <p class="cert-date">Completed: August 2025</p>
-                        <button class="view-btn" onclick="openCertificateModal('certificates/OCI25AICFA.jpeg', 'Artificial Intelligence', 'Advanced course on AI concepts, machine learning, and neural networks.')">View Certificate</button>
-                    </div>
-                </div>
-
-                <div class="certificate-item" data-category="web">
-                    <img src="certificates/OCI25FNDCFA.jpeg" alt="Oracle Certificate">
+                <div class="certificate-item" data-category="cloud">
+                    <img src="certificates/OCI25FNDCFA.jpeg" alt="Oracle Cloud Computing Certificate">
                     <div class="certificate-info">
                         <h3>Cloud Computing</h3>
                         <p>Oracle</p>
                         <p class="cert-date">Completed: August 2025</p>
                         <button class="view-btn" onclick="openCertificateModal('certificates/OCI25FNDCFA.jpeg', 'Cloud Computing', 'Comprehensive course on cloud infrastructure, services, and deployment models.')">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Artificial Intelligence Certificates -->
+                <div class="certificate-item" data-category="ai">
+                    <img src="certificates/photo (5).png" alt="AI Basics Certificate">
+                    <div class="certificate-info">
+                        <h3>AI Basics</h3>
+                        <p>Huawei Talent</p>
+                        <p class="cert-date">Completed: August 2025</p>
+                        <button class="view-btn" onclick="openCertificateModal('certificates/photo (5).png', 'AI Basics', 'Foundational course on AI concepts, tools, and applications.')">View Certificate</button>
+                    </div>
+                </div>
+
+                <div class="certificate-item" data-category="ai">
+                    <img src="certificates/OCI25AICFA.jpeg" alt="Oracle AI Certificate">
+                    <div class="certificate-info">
+                        <h3>Artificial Intelligence</h3>
+                        <p>Oracle</p>
+                        <p class="cert-date">Completed: August 2025</p>
+                        <button class="view-btn" onclick="openCertificateModal('certificates/OCI25AICFA.jpeg', 'Artificial Intelligence', 'Advanced course on AI concepts, machine learning, and neural networks.')">View Certificate</button>
                     </div>
                 </div>
             </div>
@@ -167,17 +168,13 @@
                 <h2>Certificate Verification</h2>
                 <p>All certificates can be verified through their respective issuing platforms. Click on any certificate to view the full details and verification information.</p>
                 <div class="verification-links">
-                    <a href="https://coursera.org" target="_blank" class="verification-link">
+                    <a href="https://talent.huawei.com/" target="_blank" class="verification-link">
                         <i class="fas fa-external-link-alt"></i>
-                        Verify Coursera Certificates
+                        Verify Huawei Talent Certificates
                     </a>
-                    <a href="https://freecodecamp.org" target="_blank" class="verification-link">
+                    <a href="https://education.oracle.com/certification" target="_blank" class="verification-link">
                         <i class="fas fa-external-link-alt"></i>
-                        Verify freeCodeCamp Certificates
-                    </a>
-                    <a href="https://udemy.com" target="_blank" class="verification-link">
-                        <i class="fas fa-external-link-alt"></i>
-                        Verify Udemy Certificates
+                        Verify Oracle Certificates
                     </a>
                 </div>
             </div>
