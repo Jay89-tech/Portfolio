@@ -1,264 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-            rel="stylesheet">
-    </head>
-    <body>
-        <!-- Navigation -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+        <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <!-- Landing Page -->
+    <div class="landing-page" id="landingPage">
+        <div class="slideshow-container">
+            <div class="slide slide1 active" ></div>
+            <div class="slide slide2 active" ></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4" ></div>
+            <div class="slide slide5" ></div>
+        </div>
+        <div class="overlay"></div>
+        
+        <!-- Balloons -->
+        <div class="balloon balloon1"></div>
+        <div class="balloon balloon2"></div>
+        <div class="balloon balloon3"></div>
+        <div class="balloon balloon4"></div>
+        
+        <!-- Confetti -->
+        <div class="confetti" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="confetti" style="left: 20%; animation-delay: 0.5s;"></div>
+        <div class="confetti" style="left: 30%; animation-delay: 1s;"></div>
+        <div class="confetti" style="left: 40%; animation-delay: 1.5s;"></div>
+        <div class="confetti" style="left: 50%; animation-delay: 0.3s;"></div>
+        <div class="confetti" style="left: 60%; animation-delay: 0.8s;"></div>
+        <div class="confetti" style="left: 70%; animation-delay: 1.3s;"></div>
+        <div class="confetti" style="left: 80%; animation-delay: 0.2s;"></div>
+        <div class="confetti" style="left: 90%; animation-delay: 1.8s;"></div>
+        
+        <!-- Fireworks -->
+        <div class="firework" style="top: 20%; left: 15%; background: #ff6b6b; animation-delay: 0s;"></div>
+        <div class="firework" style="top: 30%; right: 20%; background: #4ecdc4; animation-delay: 0.7s;"></div>
+        <div class="firework" style="top: 15%; left: 70%; background: #f9ca24; animation-delay: 1.4s;"></div>
+        <div class="firework" style="bottom: 25%; left: 25%; background: #45b7d1; animation-delay: 2.1s;"></div>
+        
+<div class="landing-content">
+    <h1>HAPPY BIRTHDAY MAPASELA V MPHOSI</h1>
+    <p>A celebration of love, memories, and beautiful moments we've shared together</p>
+    <button class="enter-btn" onclick="enterSite()">Enter</button>
+</div>
+    </div>
+
+    <!-- Main Site -->
+    <div class="main-site" id="mainSite">
         <nav class="navbar">
             <div class="nav-container">
-                <div class="logo">
-                    <span>Portfolio.</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html"
-                            class="nav-link active">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="projects.html"
-                            class="nav-link">Projects</a></li>
-                    <li><a href="certificates.html"
-                            class="nav-link">Certificates</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/Thecode89"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a
-                        href="https://www.linkedin.com/in/junior-maya-a56265251"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Jay89-tech?tab=repositories"><i
-                            class="fab fa-github"></i></a>
-                </div>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                <button class="nav-btn active" onclick="showPage('home')">Home</button>
+                <button class="nav-btn" onclick="showPage('memories-old')">2003-2024</button>
+                <button class="nav-btn" onclick="showPage('memories-new')">2025-Present</button>
+                <button class="nav-btn" onclick="showPage('date')">Date</button>
+                <button class="nav-btn" onclick="showPage('respond')">Respond</button>
             </div>
         </nav>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h3>Hello,</h3>
-                    <h1>I'm <span class="highlight">Junior Banda</span></h1>
-                    <h2>IT Student </h2>
-                    <p>From Central University Of Technology</p>
-                    <button class="cta-btn">Hire Me</button>
-                </div>
-                <div class="hero-image">
-                    <div class="profile-circle">
-                        <img
-                            src="images/IMG-20240928-WA0174-removebg-preview.png"
-                            alt="Profile Picture">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="skills">
-            <div class="container">
-                <h2>My Skills</h2>
-                <p class="skills-subtitle">Skills Reflect Our Knowledge</p>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <h4>HTML</h4>
-                            <span>90%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress"
-                                style="width: 90%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <h4>CSS</h4>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress"
-                                style="width: 90%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <h4>JavaScript</h4>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress"
-                                style="width: 50%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <h4>Cloud Computing</h4>
-                            <span>60%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress"
-                                style="width: 60%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <h4>Machine Learning</h4>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress"
-                                style="width: 80%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <h4>Deep Learning</h4>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress"
-                                style="width: 80%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <h4>Azure</h4>
-                            <span>60%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress"
-                                style="width: 60%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <h4>Networking</h4>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress"
-                                style="width: 80%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <h4>Cloud Computing</h4>
-                            <span>60%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress"
-                                style="width: 60%"></div>
-                        </div>
-                    </div>
-
-                                        <div class="skill-item">
-                        <div class="skill-info">
-                            <h4>Oracle</h4>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress"
-                                style="width: 80%"></div>
-                        </div>
-                    </div>
-
-                </section>
-
-                <div class="experience">
-                    <div class="experience-number">0</div>
-                    <div class="experience-text">
-                        <span>Years Of</span>
-                        <span>Experience</span>
+        <div class="content">
+            <!-- Home Page -->
+            <div class="page active" id="home">
+                <div class="home-content">
+                    <div class="welcome-message">
+                        <h2>Happy Birthday, My Beautiful! <span class="heart">💖</span></h2>
+                        <p>Welcome to your special birthday website! This is a celebration of you, our memories, and our love.</p>
+                        <p>Navigate through our journey together, from the early days to the present moment.</p>
+                        <p>Every photo tells a story, every moment is precious, and every day with you is a gift.</p>
+                        <p>I love you more than words can express! <span class="heart">❤️</span></p>
                     </div>
                 </div>
             </div>
 
-            <!-- Services Section -->
-            <section class="services">
-                <div class="container">
-                    <h2>My Services</h2>
-                    <div class="services-grid">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h4>Web Development</h4>
-                            <p>Creating responsive and modern
-                                websites using the latest
-                                technologies</p>
-                        </div>
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fas fa-palette"></i>
-                            </div>
-                            <h4>UI/UX Design</h4>
-                            <p>Designing intuitive and
-                                user-friendly interfaces for
-                                better user experience</p>
-                        </div>
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i
-                                    class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h4>Mobile Development</h4>
-                            <p>Building mobile applications for
-                                iOS and Android platforms</p>
-                        </div>
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <h4>Database Design</h4>
-                            <p>Designing and managing efficient
-                                database systems</p>
-                        </div>
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fas fa-server"></i>
-                            </div>
-                            <h4>Backend Development</h4>
-                            <p>Creating robust server-side
-                                applications and APIs</p>
-                        </div>
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fas fa-cloud"></i>
-                            </div>
-                            <h4>Cloud Services</h4>
-                            <p>Implementing cloud solutions and
-                                deployment strategies</p>
-                        </div>
+            <!-- 2003-2024 Memories -->
+            <div class="page" id="memories-old">
+                <h1>Our Journey Together (2003-2024)</h1>
+                <div class="folder-grid">
+                    <div class="folder" onclick="openGallery('2003-2005')">
+                        <div class="folder-icon">📷</div>
+                        <h3>Early Years</h3>
+                        <p>2003-2005</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('2006-2008')">
+                        <div class="folder-icon">🌟</div>
+                        <h3>Growing Up</h3>
+                        <p>2006-2008</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('2009-2011')">
+                        <div class="folder-icon">💫</div>
+                        <h3>Years</h3>
+                        <p>2009-2011</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('Family')">
+                        <div class="folder-icon">🌈</div>
+                        <h3>Family</h3>
+                        <p>00</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('Friends')">
+                        <div class="folder-icon">💝</div>
+                        <h3>Friends</h3>
+                        <p>00</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('2020-2021')">
+                        <div class="folder-icon">🌸</div>
+                        <h3>Before & After</h3>
+                        <p>2020-2021</p>
+                    </div>
+                     <div class="folder" onclick="openGallery('High-School')">
+                        <div class="folder-icon">🎓</div>
+                        <h3>High School</h3>
+                        <p>--</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('2022-2023')">
+                        <div class="folder-icon">✨</div>
+                        <h3>Making Memories</h3>
+                        <p>2022 Bloem</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('2023')">
+                        <div class="folder-icon">😶‍🌫️</div>
+                        <h3>Gap Year</h3>
+                        <p>2023</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('2024')">
+                        <div class="folder-icon">🎉</div>
+                        <h3>Last Year Together</h3>
+                        <p>2024</p>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <!-- Footer -->
-            <footer class="footer">
-                <div class="container">
-                    <p>&copy; 2025 Junior Maya. All Rights
-                        Reserved</p>
+            <!-- 2025-Present Memories -->
+            <div class="page" id="memories-new">
+                <h1>Our Current Chapter (2025-Present)</h1>
+                <div class="folder-grid">
+                    <div class="folder" onclick="openGallery('jan-2025')">
+                        <div class="folder-icon">❄️</div>
+                        <h3>January 2025</h3>
+                        <p>New Year, New Memories</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('feb-2025')">
+                        <div class="folder-icon">💕</div>
+                        <h3>February 2025</h3>
+                        <p>Love Month</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('mar-2025')">
+                        <div class="folder-icon">🌷</div>
+                        <h3>March 2025</h3>
+                        <p>Spring Beginnings</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('apr-2025')">
+                        <div class="folder-icon">🌺</div>
+                        <h3>April 2025</h3>
+                        <p>Blooming Together</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('may-2025')">
+                        <div class="folder-icon">☀️</div>
+                        <h3>May 2025</h3>
+                        <p>Sunny Days</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('jun-2025')">
+                        <div class="folder-icon">🏖️</div>
+                        <h3>June 2025</h3>
+                        <p>Summer Adventures</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('jul-2025')">
+                        <div class="folder-icon">🎆</div>
+                        <h3>July 2025</h3>
+                        <p>Celebration Time</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('aug-2025')">
+                        <div class="folder-icon">🎂</div>
+                        <h3>August 2025</h3>
+                        <p>Birthday Month!</p>
+                    </div>
+                    <div class="folder" onclick="openGallery('recent-2025')">
+                        <div class="folder-icon">💖</div>
+                        <h3>Recent Moments</h3>
+                        <p>Our Latest Adventures</p>
+                    </div>
                 </div>
-            </footer>
+            </div>
 
-            <script src="script.js"></script>
-        </body>
-    </html>
+            <!-- Date Page -->
+            <div class="page" id="date">
+                <h1>Let's Plan Something Special!</h1>
+                <div class="date-content">
+                    <div class="date-box">
+                        <h2>Your Birthday Date 💕</h2>
+                        <p>I want to make your birthday absolutely perfect! We could go anywhere you want, do anything that makes you happy.</p>
+                        <p>Maybe a romantic dinner under the stars? A fun adventure somewhere new? A cozy day at home with your favorite movies?</p>
+                        <p>Or perhaps we could take a spontaneous trip somewhere you've always wanted to go!</p>
+                        <p>The most important thing is that we're together, celebrating you and this special day.</p>
+                        <p><strong>What would make your heart happiest, my love?</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Response Page -->
+            <div class="page" id="respond">
+                <h1>Tell Me Your Birthday Wishes! 🎂</h1>
+                <div class="response-form">
+                    <h2 style="color: #ffd93d; margin-bottom: 1.5rem; text-align: center;">What do you want to do for your birthday?</h2>
+                    <textarea id="birthdayResponse" placeholder="Tell me all your birthday dreams and wishes! I want to make them all come true... 💖"></textarea>
+                    <div style="text-align: center;">
+                        <button class="submit-btn" onclick="submitResponse()">Send My Response 💕</button>
+                    </div>
+                    <div id="responseMessage" style="margin-top: 1rem; text-align: center; color: #ffd93d;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Gallery Modal -->
+    <div class="photo-gallery" id="photoGallery">
+        <div class="gallery-header">
+            <h2 style="color: white;" id="galleryTitle">Photo Gallery</h2>
+            <button class="close-gallery" onclick="closeGallery()">Close</button>
+        </div>
+        <div class="photo-grid" id="photoGrid">
+            <!-- Photos will be dynamically loaded here -->
+        </div>
+    </div>
+<div class="image-modal" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeImageModal()">✕</button>
+            <div class="modal-header">
+                <h3 id="modalTitle">Photo Title</h3>
+                <div class="image-counter" id="imageCounter">1 / 10</div>
+            </div>
+            <div class="modal-image-container">
+                <img class="modal-image" id="modalImage" src="" alt="Gallery Image">
+                <div class="modal-watermark"></div>
+                <button class="modal-nav modal-prev" onclick="previousImage()">‹</button>
+                <button class="modal-nav modal-next" onclick="nextImage()">›</button>
+            </div>
+        </div>
+    </div>
+             <script src="script.js"></script>
+</body>
+</html>
